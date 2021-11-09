@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="test">
+    <h4><%= @article.title %></h4>
+    <ul>
+      <li class="crayon"><%= link_to "✐", edit_article_path %></li>
+      <li><%= link_to "🗑", article_path, method: :delete,
+        data: { confirm: "Are you sure?" } %></li>
+    </ul>
+  </div>
+<p><%= @article.content %><p>
+</div>
